@@ -103,7 +103,7 @@
 
     <!-- Hero -->
 
-    <section class="section hero none">
+    <section class="section hero">
         <h1 class="hero-title title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
     </section>
@@ -170,12 +170,18 @@
 
     <!-- Our Team -->
 
-    <section class="section team none">
+    <section class="section team">
       <div class="container">
         <h2 class="title team-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-member">
-            <img src="./images/teammate-1.jpg" alt="Mark Guerrero" class="team-photo" width="264" />
+            <img
+              srcset="./images/teammate-1.jpg 1x, 
+                      ./images/teammate-1@2x.jpg 2x" 
+              src="./images/teammate-1.jpg" 
+              alt="Mark Guerrero" 
+              class="team-photo" 
+              width="264" />
             <div class="team-description">
               <h3 class="team-name">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
@@ -212,7 +218,13 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/teammate-2.jpg" alt="Tom Ford" class="team-photo" width="264" />
+            <img
+            srcset="./images/teammate-2.jpg 1x, 
+                    ./images/teammate-2@2x.jpg 2x" 
+            src="./images/teammate-2.jpg" 
+            alt="Mark Guerrero" 
+            class="team-photo" 
+            width="264" />
             <div class="team-description">
               <h3 class="team-name">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
@@ -249,7 +261,13 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/teammate-3.jpg" alt="Camila Garcia" class="team-photo" width="264" />
+            <img
+              srcset="./images/teammate-3.jpg 1x, 
+                      ./images/teammate-3@2x.jpg 2x" 
+              src="./images/teammate-3.jpg" 
+              alt="Mark Guerrero" 
+              class="team-photo" 
+              width="264" />
             <div class="team-description">
               <h3 class="team-name">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
@@ -286,7 +304,13 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/teammate-4.jpg" alt="Daniel Wilson" class="team-photo" width="264" />
+            <img
+              srcset="./images/teammate-4.jpg 1x, 
+                      ./images/teammate-4@2x.jpg 2x" 
+              src="./images/teammate-4.jpg" 
+              alt="Mark Guerrero" 
+              class="team-photo" 
+              width="264" />
             <div class="team-description">
               <h3 class="team-name">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
@@ -328,13 +352,28 @@
 
     <!-- Portfolio section -->
 
-    <section class="section portfolio">
+    <section class="section portfolio none">
       <div class="container">
         <h2 class="title portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-1.jpg" alt="Banking app screenshot" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-1.jpg 1x, 
+                ./images/portfolio/portfolio-image-1@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-1-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-1-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-1-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-1-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-1-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -347,7 +386,22 @@
           </li>
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-2.jpg" alt="Cashless Payment" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-2.jpg 1x, 
+                ./images/portfolio/portfolio-image-2@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-2-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-2-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-2-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-2-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-2-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -360,7 +414,22 @@
           </li>
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-3.jpg" alt="Meditation App" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-3.jpg 1x, 
+                ./images/portfolio/portfolio-image-3@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-3-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-3-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-3-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-3-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-3-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -373,7 +442,22 @@
           </li>
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-4.jpg" alt="Taxi Service" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-4.jpg 1x, 
+                ./images/portfolio/portfolio-image-4@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-4-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-4-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-4-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-4-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-4-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -386,7 +470,22 @@
           </li>
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-5.jpg" alt="Screen Illustrations" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-5.jpg 1x, 
+                ./images/portfolio/portfolio-image-5@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-5-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-5-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-5-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-5-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-5-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -399,7 +498,22 @@
           </li>
           <li class="portfolio-card card">
             <div class="card-image-wrapper">
-              <img class="card-image" src="./images/portfolio-image-6.jpg" alt="Online Courses" width="360">
+              <picture>
+                <source 
+                  media="(min-width: 1158px)" 
+                  srcset="./images/portfolio/portfolio-image-6.jpg 1x, 
+                ./images/portfolio/portfolio-image-6@2x.jpg 2x">
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/portfolio/portfolio-image-6-tab.jpg 1x, 
+                ./images/portfolio/portfolio-image-6-tab@2x.jpg 2x">
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/portfolio/portfolio-image-6-mob.jpg 1x, 
+                ./images/portfolio/portfolio-image-6-mob@2x.jpg 2x">
+                <img class="card-image" 
+                src="./images/portfolio/portfolio-image-6-tab.jpg" alt="Banking app screenshot" width="360">
+              </picture>
               <p class="card-description">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -418,7 +532,7 @@
 
   <!-- Footer -->
 
-  <footer class="footer none">
+  <footer class="footer">
     <div class="container footer-container">
       <div class="footer-info-column">
         <a class="footer-logo" href="./index.html">Web<span class="footer-logo-span">Studio</span></a>
