@@ -9,3 +9,16 @@ openMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     headerNav.classList.remove('is-open');
 })
+
+
+const orderButton = document.querySelector('.hero-button'),
+    modal = document.querySelector('.backdrop'),
+    modalCloseButton = document.querySelector('.modal-button-close');
+
+orderButton.addEventListener('click', () => {
+    modal.classList.add('is-open');
+});
+
+modalCloseButton.addEventListener('click', () => {
+    modal.classList.remove('is-open');
+});
