@@ -253,7 +253,7 @@ img {
 /* ===Main=== */
 
 .hero {
-  padding: 72px 52px;
+  padding: 72px 0;
   margin: 0 auto;
   max-width: 1440px;
   text-align: center;
@@ -354,10 +354,10 @@ img {
 }
 .team-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  /* flex-basis: 264px; */
+  gap: 72px;
   flex-wrap: wrap;
 }
 .team-member {
@@ -517,7 +517,7 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* gap: 120px; */
+  gap: 72px;
 }
 
 .footer-info-column {
@@ -526,7 +526,6 @@ img {
   align-items: center;
 
   width: 100%;
-  margin-bottom: 72px;
 }
 .footer-logo {
   display: block;
@@ -554,7 +553,6 @@ img {
 }
 
 .footer-social-column {
-  margin-bottom: 72px;
   width: 100%;
   text-align: center;
 }
@@ -1064,6 +1062,7 @@ img {
   /* Hero */
 
   .hero {
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1108,6 +1107,8 @@ img {
   /* Team */
 
   .team-list {
+    flex-direction: row;
+    gap: 64px 24px;
     flex-basis: calc((100% - 24px) / 2);
   }
   /* Portfolio */
@@ -1118,18 +1119,32 @@ img {
   .card-image {
     width: 100%;
   }
+
+  .footer {
+    padding: 96px;
+  }
+
   .footer-container {
+    max-width: 584px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: baseline;
-    gap: 24px 72px;
+    gap: 72px 24px;
     flex-wrap: wrap;
   }
   .footer-info-column {
     width: auto;
+    align-items: start;
   }
   .footer-social-column {
     width: auto;
+    text-align: left;
+  }
+  .footer-form-column {
+    margin: 0;
+  }
+  .footer-form-title {
+    text-align: left;
   }
 
   .modal {
@@ -1156,9 +1171,15 @@ img {
     margin-right: 76px;
   }
 
+  .header-contacts-list {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+
   /* Hero */
 
   .hero {
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1183,7 +1204,8 @@ img {
     max-width: 496px;
 
     font-size: 56px;
-    line-height: 107.143%;
+    line-height: 107%;
+    letter-spacing: 0.02em;
 
     color: #ffffff;
   }
@@ -1227,8 +1249,19 @@ img {
 
   /* Footer  */
 
+  .footer {
+    padding: 100px 16px;
+  }
+
+  .footer-container {
+    max-width: 1158px;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
   .footer-info-column {
     margin-bottom: 0;
+    margin-right: 40px;
   }
 
   .footer-social-column {
